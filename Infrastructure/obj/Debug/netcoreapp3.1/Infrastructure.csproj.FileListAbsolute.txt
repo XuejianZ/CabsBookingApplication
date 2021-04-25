@@ -1,0 +1,4 @@
+C:\Users\XuejianZhou\Desktop\Final Project\XuejianZhou.application.CabsBooking\Infrastructure\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+C:\Users\XuejianZhou\Desktop\Final Project\XuejianZhou.application.CabsBooking\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csprojAssemblyReference.cache
+C:\Users\XuejianZhou\Desktop\Final Project\XuejianZhou.application.CabsBooking\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\XuejianZhou\Desktop\Final Project\XuejianZhou.application.CabsBooking\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfo.cs

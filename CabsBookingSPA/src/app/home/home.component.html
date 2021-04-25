@@ -1,0 +1,45 @@
+<div class="container">
+
+      <h2>Cabs </h2>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Cabs</th>
+            <th scope="col">Actions</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cab of cabs">
+            <td>{{cab.cabTypeId}}</td>
+
+
+            <td ngbDropdownItem  [routerLink]="['/information/', cab.cabTypeId]">
+                {{cab.cabTypeName}}
+              <div>
+                <small class="text-muted"></small>
+              </div>
+            </td>
+
+            <td class="overflow-hidden">
+              <div ngbDropdown container="body">
+                <button class="btn btn-outline-primary btn-sm" ngbDropdownToggle>Actions</button>
+                <div ngbDropdownMenu>
+                  <button ngbDropdownItem>Update</button>
+                  <div class="dropdown-divider"></div>
+
+                        <button ngbDropdownItem (click)="delete(cab.cabTypeId)">    Delete    </button>
+
+                  </div>
+              </div>
+              <small class="text-muted"></small>
+            </td>
+        
+          </tr>
+        </tbody>
+      </table>
+
+
+  </div>

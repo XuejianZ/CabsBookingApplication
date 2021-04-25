@@ -1,0 +1,117 @@
+
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>bookingHistory</h2>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Id</th>
+                <th scope="col">Email</th>
+                <th scope="col">BookingDate</th>
+                <th scope="col">BookingTime</th>
+                <th scope="col">FromPlace</th>
+                <th scope="col">ToPlace</th>
+                <th scope="col">PickupAddress</th>
+                <th scope="col">Landmark</th>
+                <th scope="col">PickupDate</th>
+                <th scope="col">PickupTime</th>
+                <th scope="col">CabTypeId</th>
+                <th scope="col">ContactNo</th>
+                <th scope="col">Status</th>
+                <th scope="col">comp_time</th>
+                <th scope="col">charge</th>
+                <th scope="col">Feedback</th>
+        
+              </tr>
+            </thead>
+            <tbody>
+        
+               <tr *ngFor="let booking of bHistory;index as i " >
+                <th scope="row">{{i+1}}</th>
+                <td>{{booking.id}}</td>
+                <td>{{booking.email}}</td>
+                <td>{{booking.bookingDate}}</td>
+                <td>{{booking.bookingTime}}</td>
+                <td>{{booking.fromPlace}}</td>
+                <td>{{booking.toPlace}}</td>
+                <td>{{booking.pickupAddress}}</td>
+                <td>{{booking.landmark}}</td>
+                <td>{{booking.pickupDate}}</td>
+                <td>{{booking.pickupDate}}</td>
+        
+                <td>{{booking.cabTypeId}}</td>
+                <td>{{booking.contactNo}}</td>
+                <td>{{booking.status}}</td>
+                <td>{{booking.comp_time}}</td>
+                <td>{{booking.charge}}</td>
+                <td>{{booking.feedback}}</td>
+              </tr>
+        
+        
+            </tbody>
+          </table>
+      </div>
+    
+    </div>
+     <div class="row"> 
+      <div class="col">
+        <h2>CurrentBookings</h2>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Id</th>
+                <th scope="col">Email</th>
+                <th scope="col">BookingDate</th>
+                <th scope="col">BookingTime</th>
+                <th scope="col">FromPlace</th>
+                <th scope="col">ToPlace</th>
+                <th scope="col">PickupAddress</th>
+                <th scope="col">Landmark</th>
+                <th scope="col">PickupDate</th>
+                <th scope="col">PickupTime</th>
+                <th scope="col">CabTypeId</th>
+                <th scope="col">ContactNo</th>
+                <th scope="col">Status</th>
+              
+        
+              </tr>
+            </thead>
+
+            <tbody>
+               <tr *ngFor="let bc of bCurrent;index as i " >
+                <th scope="row">{{i+1}}</th>
+                <td>{{bc.id}}</td>
+                <td>{{bc.email}}</td>
+                <td>{{bc.bookingDate}}</td>
+                <td>{{bc.bookingTime}}</td>
+                <td>{{bc.fromPlace}}</td>
+                <td>{{bc.toPlace}}</td>
+                <td>{{bc.pickupAddress}}</td>
+                <td>{{bc.landmark}}</td>
+                <td>{{bc.pickupDate}}</td>
+                <td>{{bc.pickupDate}}</td>
+        
+                <td>{{bc.cabTypeId}}</td>
+                <td>{{bc.contactNo}}</td>
+                <td>{{bc.status}}</td>
+              
+              </tr>
+        
+            </tbody>
+          </table>
+      </div>
+      <div class="col">
+        2 of 3
+      </div>
+      <div class="col">
+        3 of 3
+      </div>
+    </div>
+  </div>
+
+
